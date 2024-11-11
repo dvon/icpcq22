@@ -15,10 +15,10 @@ public class GhostLeg {
         for (int i = 1; i <= n; i++) {
             int j = i;
 
-            for (int k = 0; k < m; k++) {
-                if (rungs[k] == j) {
+            for (int r : rungs) {
+                if (r == j) {
                     j++;
-                } else if (rungs[k] == j - 1) {
+                } else if (r == j - 1) {
                     j--;
                 }
             }
